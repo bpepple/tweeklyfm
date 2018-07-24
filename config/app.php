@@ -156,13 +156,11 @@ return [
         'App\Providers\RouteServiceProvider',
         //'Laravel\Socialite\SocialiteServiceProvider',
         'SocialiteProviders\Manager\ServiceProvider',
-        'Laravel\Cashier\CashierServiceProvider',
         'Maknz\Slack\SlackServiceProvider',
         'Laracasts\Flash\FlashServiceProvider',
         'Illuminate\Broadcasting\BroadcastServiceProvider',
         'Intervention\Image\ImageServiceProvider',
         'Phoenix\EloquentMeta\ServiceProvider',
-        'SammyK\LaravelFacebookSdk\LaravelFacebookSdkServiceProvider',
         'Artdarek\OAuth\OAuthServiceProvider',
     ],
 
