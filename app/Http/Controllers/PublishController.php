@@ -112,17 +112,6 @@ class PublishController extends BaseController
                 return Redirect::to('/publish/success');
             }
 
-            // Post to Facebook?
-            if ($connection->network_name == 'facebook') {
-                // Build an update from the artists given back
-                $update = new CreateFacebookUpdateFromLastFM($artists->getItems(), Auth::user());
-
-                $facebook = new Facebook(Auth::user(), $connection, $update);
-                $facebook->post();
-
-                return Redirect::to('/publish/success');
-            }
-
             // Post to Tumblr?
             if ($connection->network_name == 'tumblr') {
                 // Build an update from the artists given back

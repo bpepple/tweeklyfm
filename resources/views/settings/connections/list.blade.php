@@ -63,12 +63,8 @@
         </div>
         <div class="panel-body">
             <a class="btn btn-primary" href="/connect/twitter/go"><i class="fa fa-twitter"></i> Twitter</a>
-            <a class="btn btn-primary" href="/connect/facebook/app"><i class="fa fa-facebook"></i> Facebook</a>
             <a class="btn btn-primary" href="/connect/tumblr/go"><i class="fa fa-tumblr"></i> Tumblr</a>
             <a class="btn btn-primary" href="/connect/wordpress/go"><i class="fa fa-wordpress"></i> Wordpress</a>
-            <a class="btn btn-primary" disabled="disabled"><i class="fa fa-instagram"></i> Instagram</a>
-            <a class="btn btn-primary" disabled="disabled"><i class="fa fa-adn"></i> App.net</a>
-            <a class="btn btn-primary" disabled="disabled"><i class="fa fa-google-plus"></i> Google+</a>
         </div>
     </div>
 
