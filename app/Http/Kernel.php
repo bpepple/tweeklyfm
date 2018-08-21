@@ -30,7 +30,7 @@ class Kernel extends HttpKernel
         'App\Http\Middleware\VerifyCsrfToken',
         'App\Http\Middleware\EnforceProductionDomainMiddleware',
         'App\Http\Middleware\LanguageMiddleware',
-        App\Http\Middleware\SentryContext::class,
+        \App\Http\Middleware\SentryContext::class,
     ];
 
     /**
