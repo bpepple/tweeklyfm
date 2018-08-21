@@ -12,11 +12,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Logic\Common\CreateFacebookUpdateFromLastFM;
 use App\Logic\Common\CreateTumblrUpdateFromLastFM;
 use App\Logic\Common\CreateTwitterUpdateFromLastFM;
 use App\Logic\Common\CreateWordpressUpdateFromLastFM;
-use App\Logic\Connection\Facebook;
 use App\Logic\Connection\Tumblr;
 use App\Logic\Connection\Twitter;
 use App\Logic\Connection\Wordpress;
