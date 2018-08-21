@@ -27,9 +27,18 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 <script>
-	var beamer_config = {
-		selector : "open-beamer",
-		product_id : "malmwQOt179",
-	};
+    var beamer_config = {
+        selector : "open-beamer",
+        product_id : "malmwQOt179",
+    };
 </script>
 <script type="text/javascript" src="https://app.getbeamer.com/js/beamer-embed.js"></script>
+
+
+<script src="https://cdn.ravenjs.com/3.26.2/raven.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+Raven.config('{{ env('SENTRY_PUBLIC_DSN') }}').install();
+Raven.context(function () {
+    initMyApp();
+});
+</script>
