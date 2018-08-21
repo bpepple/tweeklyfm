@@ -38,7 +38,5 @@
 <script src="https://cdn.ravenjs.com/3.26.2/raven.min.js" crossorigin="anonymous"></script>
 <script type="text/javascript">
 Raven.config('{{ env('SENTRY_PUBLIC_DSN') }}').install();
-Raven.context(function () {
-    initMyApp();
-});
+Raven.context(function () {});
 </script>
