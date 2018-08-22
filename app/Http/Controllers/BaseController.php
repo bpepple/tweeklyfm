@@ -37,9 +37,8 @@ class BaseController extends Controller
             // Tag it in for views too
             $this->data['user'] = $this->user;
 
-            if ((Auth::user()->legacy_premium == true) || (Auth::user()->subscribed())) {
-                $this->data['premium'] = true;
-            }
+            // All users have premium features
+            $this->data['premium'] = true;
 
             $notifications = Auth::user()->notifications();
             if ($notifications->count() > 0) {
