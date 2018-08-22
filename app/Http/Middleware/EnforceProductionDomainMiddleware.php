@@ -29,7 +29,7 @@ class EnforceProductionDomainMiddleware
     public function handle($request, Closure $next)
     {
         if (App::environment() == 'production') {
-            if ($request->server->get('HTTP_HOST') != 'tweekly.fm') {
+            if ($request->server->get('HTTP_HOST') !== 'tweekly.fm') {
                 return Redirect::to('https://tweekly.fm');
             }
         }
