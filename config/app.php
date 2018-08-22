@@ -212,10 +212,10 @@ return [
         'View'      => 'Illuminate\Support\Facades\View',
 
         'Socialize' => 'Laravel\Socialite\Facades\Socialite',
-        'Slack' 	=> 'Maknz\Slack\Facades\Slack',
+        'Slack' 	   => 'Maknz\Slack\Facades\Slack',
         'Flash'     => 'Laracasts\Flash\Flash',
-        'Image' 	=> 'Intervention\Image\Facades\Image',
-        'OAuth' 	=> 'Artdarek\OAuth\Facade\OAuth',
+        'Image' 	   => 'Intervention\Image\Facades\Image',
+        'OAuth' 	   => 'Artdarek\OAuth\Facade\OAuth',
         'Sentry'    => Sentry\SentryLaravel\SentryFacade::class,
 
     ],
