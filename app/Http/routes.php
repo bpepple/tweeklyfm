@@ -23,12 +23,8 @@ Route::post('/connect/facebook/app/delete', 'Connection\FacebookApp@postDeleteAp
 Route::post('/connect/facebook/app', 'Connection\FacebookApp@postApp');
 Route::get('/connect/facebook/app', 'Connection\FacebookApp@getApp');
 
-Route::get('/connect/facebook/go', 'Connection\Facebook@getConnect');
-Route::get('/connect/facebook/callback', 'Connection\Facebook@getCallback');
 Route::get('/connect/twitter/go', 'Connection\Twitter@getConnect');
 Route::get('/connect/twitter/callback', 'Connection\Twitter@getCallback');
-Route::get('/connect/spotify/go', 'Connection\Spotify@getConnect');
-Route::get('/connect/spotify/callback', 'Connection\Spotify@getCallback');
 
 Route::get('/connect/tumblr/go', 'Connection\Tumblr@getConnect');
 Route::get('/connect/tumblr/callback', 'Connection\Tumblr@getConnect');

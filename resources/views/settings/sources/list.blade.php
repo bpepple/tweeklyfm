@@ -68,10 +68,8 @@
                 </div>
                 <div class="modal-body">
                     <p>Spotify doesn't have an API at the moment that we can collect play data from  However there is a workaround. If you configure Spotify to scrobble to Last.fm then we can pull your data from there.</p>
-                    <p>We are currently developing new features for Spotify which will use a linked account but that won't include your top artists.</p>
                 </div>
                 <div class="modal-footer">
-                    <a class="btn btn-success" href="/connect/spotify/go" target="_blank">Add Spotify Account</a>
                     <a class="btn btn-info" href="https://support.spotify.com/ee/learn-more/faq/#!/article/scrobble-to-last-fm" target="_blank">Setup Spotify with Last.fm</a>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>

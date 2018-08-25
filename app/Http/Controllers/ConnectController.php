@@ -122,45 +122,6 @@ class ConnectController extends BaseController
             case 'twitter':
                 break;
 
-            case 'instagram':
-                $instagram = Socialize::with('instagram')->user();
-
-                $connection = Connection::firstOrNew([
-                    'user_id'           => $user->id,
-                    'network_id'        => 4,
-                    'network_name'      => 'instagram',
-                    'external_user_id'  => $instagram->getId(),
-                ]);
-
-                $connection->user_id = $user->id;
-                $connection->network_id = 4;
-                $connection->network_name = 'instagram';
-                $connection->oauth_token = $instagram->token;
-                $connection->oauth_token_secret = '';
-                $connection->external_name = $instagram->getName();
-                $connection->external_user_id = $instagram->getId();
-                $connection->external_username = $instagram->getNickname();
-                $connection->external_avatar = $instagram->getAvatar();
-                $connection->checked_at = Carbon::now();
-                $connection->message = 'Successfully connected';
-                $connection->save();
-
-                $notification = new Notification();
-                $notification->user_id = $user->id;
-                $notification->message = 'Added Instagram Connection: '.$instagram->getName();
-                $notification->save();
-
-                Mail::send('emails.connection-added', [
-                    'network'   => 'Instagram',
-                    'avatar'    => $instagram->getAvatar(),
-                    'name'      => $instagram->getName(),
-                ], function ($message) use ($user, $instagram) {
-                    $message->to($user->email, $user->name)->subject('Instagram Connection Added: '.$instagram->getName());
-                });
-
-                return Redirect::to('/settings/connections');
-                break;
-
             default:
                 return view('errors.500');
                 break;
