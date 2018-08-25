@@ -24,7 +24,6 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Laracasts\Flash\Flash;
-use Laravel\Socialite\Facades\Socialite as Socialize;
 
 class ConnectController extends BaseController
 {
