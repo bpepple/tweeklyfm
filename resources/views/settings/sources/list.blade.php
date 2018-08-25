@@ -55,7 +55,6 @@
         <div class="panel-body">
             <a class="btn btn-primary" href="/connect/lastfm/go"><i class="fa fa-lastfm"></i> Last.fm</a>
             <a class="btn btn-primary" data-toggle="modal" data-target="#mdlSpotify"><i class="fa fa-spotify"></i> Spotify</a>
-            <a class="btn btn-primary" disabled="disabled"><i class="fa fa-music"></i> Deezer</a>
         </div>
     </div>
 
