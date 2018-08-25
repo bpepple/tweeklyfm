@@ -19,10 +19,6 @@ Route::post('/push/auth', 'Common\PusherController@postAuth');
 Route::get('/connect/wordpress/go', 'Connection\Wordpress@getConnect');
 Route::get('/connect/wordpress/callback', 'Connection\Wordpress@getCallback');
 
-Route::post('/connect/facebook/app/delete', 'Connection\FacebookApp@postDeleteApp');
-Route::post('/connect/facebook/app', 'Connection\FacebookApp@postApp');
-Route::get('/connect/facebook/app', 'Connection\FacebookApp@getApp');
-
 Route::get('/connect/twitter/go', 'Connection\Twitter@getConnect');
 Route::get('/connect/twitter/callback', 'Connection\Twitter@getCallback');
 
